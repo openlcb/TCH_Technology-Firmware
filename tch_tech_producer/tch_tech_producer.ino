@@ -200,8 +200,6 @@ void loop() {
     // handle the status lights  
     blue.process();
     gold.process();
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1bb23d09a535e58d871b5ce2c7ae28656303bee7
+
+
