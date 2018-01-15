@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type='text/xsl' href='http://openlcb.org/trunk/prototypes/xml/xslt/cdi.xsl'?>
+<cdi xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://openlcb.org/trunk/prototypes/xml/schema/cdi.xsd'>
+
+<identification>
+    <manufacturer>TCH Technology</manufacturer>
+    <model>OpenLCB/LCC 16 in 24 out P/C Node</model>
+    <hardwareVersion>1.0.4</hardwareVersion>
+    <softwareVersion>0.8.7</softwareVersion>
+    <map>
+        <relation>
+        <property>OpenLCB/LCC Board for</property>
+        <value>TCH Tech Default 16in/24out</value>
+        </relation>
+        <relation>
+        <property>Street Address</property>
+        <value>1076 41st Drive</value>
+        </relation>
+        <relation>
+        <property>City</property>
+        <value>Chanute, Kansas 66720</value>
+        </relation>
+        <relation>
+        <property>email</property>
+        <value>sales@tch-technology.com</value>
+        </relation>
+        <relation>
+        <property>Node Id No.</property>
+        <value>default 02.01.36.01.00.00</value>
+        </relation>
+    </map>
+</identification>
+
+<segment origin='0' space='253'>
+    <name>User Identification</name>
+    <description>Add your own unique node infomation here.   Node Name Max 20 characters.</description>
+    <group offset='816'>
+        <string size='20'>
+            <name>Node Name</name>
+        </string>
+        <string size='30'>
+            <name>Node Description</name>
+        </string>
+    </group>
+</segment>
+
+<segment origin='10' space='253'>
+    <name>I/O Events</name>
+    <description>Define events associated with input and output pins</description>
+    <group replication='24'>
+        <name>Outputs</name>
+        <repname>Output</repname>
+        <string size='16' offset='860'>
+            <name>Description</name>
+        </string>
+        <eventid offset='-874' ><!-- forward 860, add 16, back 166, then forward 2-->
+            <name>Activation Event #1</name>
+        </eventid>
+        <eventid offset='2' >
+            <name>Inactivation Event #1</name>
+        </eventid>
+    </group>
+    <group replication='16'>
+        <name>Inputs</name>
+        <repname>Input</repname>
+        <string size='16' offset='860'>
+            <name>Description</name>
+        </string>
+        <eventid offset='-874' ><!-- forward 860, add 16, back 166, then forward 2-->
+            <name>Set Event #1</name>
+        </eventid>
+        <eventid offset='2' >
+            <name>Reset Event #1</name>
+        </eventid>
+    </group>
+</segment>
+<segment origin='0' space='253'>
+    <name>Reset</name>
+    <description>Controls reloading and clearing node memory. Board must be restarted for this to take effect.</description>
+    <int size='4'>
+        <map>
+            <relation><property>3998572261</property><value>(No reset)</value></relation>
+            <relation><property>3998561228</property><value>User clear: New default EventIDs, blank strings</value></relation>
+            <relation><property>0</property><value>Mfg clear: Reset all, including Node ID</value></relation>
+        </map>
+    </int>
+</segment>
+
+</cdi>
