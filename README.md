@@ -19,6 +19,7 @@ These Sketches were tested on 1.0.5
 1. Download a copy of Arduino IDE 1.0.6 from [this page](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) into a new file, say *Arduino106*;   
 2. Download the [zip file](https://github.com/openlcb/TCH-Technologies/archive/master.zip) from this repositiory into a new directory, say *TCHFirmware*; 
 3. Run *Arduino106*, and click on the 'Arduino' tab, and choose Preferences.  In the 'Sketchbook Location' field enter the location of the TCHFirmware directory, or browse for it.  When you have found the directory, push OK at the bottom of the window.  
+    You may need to restart the Arduino IDE.  
 4. Click on 'File' and then 'Sketchbook' and choose one of:
     - tch_tech_16P_24C
     - tch_consumer
