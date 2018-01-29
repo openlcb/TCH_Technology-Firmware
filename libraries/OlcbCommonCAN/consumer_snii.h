@@ -16,5 +16,5 @@
 //
 //Consumer SNII Data
 extern "C" {
-const prog_char SNII_const_data[] PROGMEM = "\001TCH Technology\000OpenLCB/LCC 32-Output Consumer Node Rev B\0001.0.1\0000.7.7";
+const PROGMEM char SNII_const_data[] = "\001TCH Technology\000OpenLCB/LCC 32-Output Consumer Node Rev B\0001.0.1\0000.7.7";
 }

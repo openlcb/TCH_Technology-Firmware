@@ -15,7 +15,7 @@ static bool queued;
 #define MTI_PIP_REPLY   0x668
 
 extern "C" {
-extern uint8_t protocolIdentValue[6] = {0xD7,0x58,0,0,0,0};
+const uint8_t protocolIdentValue[6] = {0xD7,0x58,0,0,0,0};
 }
 
 void PIP_setup(OpenLcbCanBuffer* b, LinkControl* li) {

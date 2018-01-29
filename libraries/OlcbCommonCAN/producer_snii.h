@@ -15,5 +15,5 @@
 // Tim Hatch 2010-1016//Producer SNII Data
 //
 extern "C" {
-const prog_char SNII_const_data[] PROGMEM = "\001TCH Technology\000OpenLCB/LCC 32-Input Producer Node Rev B\0001.0.1\0000.7.8";
+const PROGMEM char SNII_const_data[] = "\001TCH Technology\000OpenLCB/LCC 32-Input Producer Node Rev B\0001.0.1\0000.7.8";
 }

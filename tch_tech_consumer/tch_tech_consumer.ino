@@ -104,8 +104,8 @@ void getWrite(uint32_t address, int space, uint8_t val) {
 #include <consumer_events.h>
 #include <consumer_outputs.h>
 
-#define ShortBlinkOn   0x00010001L
-#define ShortBlinkOff  0xFFFEFFFEL
+#define ShortBlinkOn   0x00010001UL
+#define ShortBlinkOff  0xFFFEFFFEUL
 
 #include <consumer_blink_patterns.h>
 #include <consumer_buttons.h>

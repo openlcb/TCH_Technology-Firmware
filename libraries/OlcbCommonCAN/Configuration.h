@@ -12,6 +12,12 @@
 
 class OlcbStream;
 
+extern "C" {
+extern const uint8_t getRead(uint32_t address, int space);
+extern void getWrite(uint32_t address, int space, uint8_t val);
+extern void restart();
+};
+
 class Configuration {
   public:
   

@@ -34,7 +34,7 @@
 
 unsigned int datagramCallback(uint8_t *rbuf, unsigned int length, unsigned int from);
 
-const prog_char SNII_const_data[] PROGMEM = "\001TCH Technology\000OpenLCB/LCC 16-Input 24-Output Producer/Consumer Node\0001.0.4\0000.8.7";
+const PROGMEM char SNII_const_data[] = "\001TCH Technology\000OpenLCB/LCC 16-Input 24-Output Producer/Consumer Node\0001.0.4\0000.8.7";
 #define SNII_var_data 816
 #define SNII_var_offset 20
 #include <OlcbArduinoCAN.h>
@@ -72,7 +72,7 @@ const uint8_t getRead(uint32_t address, int space) {
     return pgm_read_byte(configDefInfo+address);
   } else if (space == 0xFE) {
     // All memory
-    return *(((uint8_t*)&rxBuffer)+address);
+    return *(((uint8_t*)&rxBuffer)+address);  
   } else if (space == 0xFD) {
     // Configuration space
     return EEPROM.read(address);
@@ -87,6 +87,7 @@ const uint8_t getRead(uint32_t address, int space) {
     return 0; 
   }
 }
+
 void getWrite(uint32_t address, int space, uint8_t val) {
   if (space == 0xFE) {
     // All memory

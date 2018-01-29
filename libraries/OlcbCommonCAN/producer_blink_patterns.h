@@ -14,7 +14,7 @@
 // based on examples by Alex Shepherd, David Harris.
 // Tim Hatch 2010-1016
 //output blink patterns
-long patterns[] = {
+unsigned long patterns[] = {
   ShortBlinkOff,ShortBlinkOn,//1
   ShortBlinkOff,ShortBlinkOn,
   ShortBlinkOff,ShortBlinkOn,

@@ -9,7 +9,7 @@
 #define UNREADY_BLINK 0xFF00FFL
 #define READY_BLINK   0x1L
 
-BG::BG(PCE* pc, ButtonLed** bC, long* pt, uint8_t n, ButtonLed* bptr, ButtonLed* gptr, OpenLcbCanBuffer* b) {
+BG::BG(PCE* pc, ButtonLed** bC, unsigned long* pt, uint8_t n, ButtonLed* bptr, ButtonLed* gptr, OpenLcbCanBuffer* b) {
       pce = pc;
       buttons = bC;
       patterns = pt;

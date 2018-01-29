@@ -1,5 +1,5 @@
 //Blink patterns
-long patterns[] = {
+unsigned long patterns[] = {
   ShortBlinkOff,ShortBlinkOn,//1
   ShortBlinkOff,ShortBlinkOn,
   ShortBlinkOff,ShortBlinkOn,

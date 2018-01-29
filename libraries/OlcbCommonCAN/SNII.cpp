@@ -33,7 +33,9 @@ static uint8_t state;
  * program space, EEPROM, etc as needed inside the target node.
  */
 
+extern "C" {
 const uint8_t getRead(uint32_t address, int space);
+};
 
 void SNII_setup(uint8_t count, uint8_t offset, OpenLcbCanBuffer* b, LinkControl* li) {
       const_count = count;
