@@ -1,7 +1,7 @@
 #ifndef BG_h
 #define BG_h
 
-#include <ButtonLed.h>
+#include <ButtonLED.h>
 
 /**
  * Class for Blue/Gold configuration.

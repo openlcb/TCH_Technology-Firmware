@@ -1,7 +1,7 @@
 #ifndef BUTTONPROTOCOL_h
 #define BUTTONPROTOCOL_h
 
-#include <ButtonLed.h>
+#include <ButtonLED.h>
 
 /**
  * Class for Remote Button Protocol.

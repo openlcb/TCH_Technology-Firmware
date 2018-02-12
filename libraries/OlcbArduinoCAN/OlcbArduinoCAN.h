@@ -41,7 +41,7 @@
 #include "PIP.h"
 #include "SNII.h"
 #include "BG.h"
-#include "ButtonLed.h"
+#include "ButtonLED.h"
 
 OpenLcbCanBuffer     rxBuffer;	// CAN receive buffer
 OpenLcbCanBuffer     txBuffer;	// CAN send buffer
